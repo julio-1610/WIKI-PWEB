@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Textos Creados</h1>
+{% for item in lista %}
+<a href="/listar/{{ item.nombre|safe }}">{{ item.nombre }}</a></br>
+{% endfor %}
+{% endblock %}
